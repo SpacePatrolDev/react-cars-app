@@ -5,6 +5,7 @@ import tw from "twin.macro";
 import MclarenCarImg from "../../../assests/images/mclaren-orange-big.png";
 import BlobImg from "../../../assests/images/blob.svg";
 import { SCREENS } from "../../components/responsive";
+import { Button } from "../../components/button";
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -140,6 +141,14 @@ const StandaloneCar = styled.div`
   }
 `;
 
+const ButtonsContainer = styled.div`
+  ${tw`
+        flex
+        flex-wrap
+        mt-4
+    `};
+`;
+
 export function TopSection() {
   return (
     <TopSectionContainer>
@@ -150,6 +159,10 @@ export function TopSection() {
           remotely at the best price for you at affordable rates tailored for
           you.
         </Description>
+        <ButtonsContainer>
+          <Button text="Book Your Car" />
+          <Button theme="filled" text="Rent Your Car" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
