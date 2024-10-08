@@ -9,7 +9,7 @@ import { Button } from "../../components/button";
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
-  margin-top: 6em;
+  margin-top: 4em;
   ${tw`
         w-full
         max-w-screen-2xl
@@ -37,6 +37,12 @@ const RightContainer = styled.div`
     flex-col
     relative
     mt-20
+    `};
+`;
+
+const Header = styled.h5`
+  ${tw`
+        text-red-500
     `};
 `;
 
@@ -153,6 +159,7 @@ export function TopSection() {
   return (
     <TopSectionContainer>
       <LeftContainer>
+        <Header>Welcome To RentMyCar</Header>
         <Slogan>Rent The Best Quality Cars In Town</Slogan>
         <Description>
           Best selection of quality rental cars from the local stores to order

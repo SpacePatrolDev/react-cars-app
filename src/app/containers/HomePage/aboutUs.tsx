@@ -18,14 +18,14 @@ const AboutUsContainer = styled.div`
         pl-7
         md:pl-0
         md:pr-0
-        bg-white
+        bg-gray-100
     `};
 `;
 
 const CarContainer = styled.div`
   width: auto;
   height: 15em;
-  margin-left: -30px;
+  margin-left: -60px;
 
   img {
     width: auto;
@@ -48,7 +48,7 @@ const CarContainer = styled.div`
 
 const InfoContainer = styled.div`
   ${tw`
-        w-1/2
+        md:w-1/2
         flex
         flex-col
         md:ml-6
@@ -56,10 +56,17 @@ const InfoContainer = styled.div`
     `};
 `;
 
+const Header = styled.h5`
+  ${tw`
+        text-red-500
+    `};
+`;
+
 const Title = styled.h1`
   ${tw`
         text-black
         text-2xl
+        mt-3
         md:text-5xl
         font-extrabold
         md:font-black
@@ -69,7 +76,7 @@ const Title = styled.h1`
 
 const InfoText = styled.p`
   ${tw`
-        max-w-2xl
+        md:max-w-2xl
         text-sm
         md:text-base
         text-gray-500
@@ -85,6 +92,7 @@ export function AboutUs() {
         <img src={JeepImg} alt="JeepImg" />
       </CarContainer>
       <InfoContainer>
+        <Header>About Us</Header>
         <Title>Find The Best Rental Deals</Title>
         <InfoText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
