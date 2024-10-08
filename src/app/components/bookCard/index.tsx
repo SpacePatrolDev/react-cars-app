@@ -52,6 +52,7 @@ const Name = styled.span`
         text-xs
         md:text-sm
         cursor-pointer
+        select-none
     `};
 `;
 
@@ -70,6 +71,7 @@ const LineSeparator = styled.span`
 const DateCalendar = styled(Calendar)`
   position: absolute;
   max-width: none;
+  user-select: none;
   top: 2em;
   left: -2em;
 `;
